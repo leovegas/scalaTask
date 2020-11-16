@@ -1,0 +1,11 @@
+[debug] > Exec(risritse/lenout/, None, None)
+[error] Expected ID character
+[error] Not a valid command: risritse
+[error] Expected project ID
+[error] Expected configuration
+[error] Expected ':'
+[error] Expected key
+[error] Not a valid key: risritse
+[error] risritse/lenout/
+[error]         ^
+[debug] > Exec(idea-shell, None, None)

@@ -1,0 +1,31 @@
+[debug] Packaging /home/leonid/Programs/testscala/target/scala-2.13/testscala_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	Program$Index$.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$Index$.class
+[debug] 	Program$FileNotFound$.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$FileNotFound$.class
+[debug] 	Program$ReadFileError.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$ReadFileError.class
+[debug] 	Main.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Main.class
+[debug] 	Program$NotDirectory$.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$NotDirectory$.class
+[debug] 	Main$delayedInit$body.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Main$delayedInit$body.class
+[debug] 	Program$Index.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$Index.class
+[debug] 	Program$FileNotFound.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$FileNotFound.class
+[debug] 	Program$MissingPathArg$.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$MissingPathArg$.class
+[debug] 	untitled.sc
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/untitled.sc
+[debug] 	Program$NotDirectory.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$NotDirectory.class
+[debug] 	Program.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program.class
+[debug] 	Main$.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Main$.class
+[debug] 	Program$.class
+[debug] 	  /home/leonid/Programs/testscala/target/scala-2.13/classes/Program$.class
+[debug] Done packaging.
