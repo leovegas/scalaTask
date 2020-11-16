@@ -1,20 +1,20 @@
 import java.io.File
-import java.nio.charset.Charset
-
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
 import scala.util.Try
-import scala.util.control.Breaks.break
 
 object Program {
+
   import scala.io.StdIn.readLine
 
-  case class Index(filesLst:List[File])
+  case class Index(filesLst: List[File])
 
   sealed trait ReadFileError
 
   case object MissingPathArg extends ReadFileError
+
   case class NotDirectory(error: String) extends ReadFileError
+
   case class FileNotFound(t: Throwable) extends ReadFileError
 
   def readFile(args: Array[String]): Either[ReadFileError, File] = {
@@ -31,15 +31,15 @@ object Program {
   }
 
 
-  def findWords(string: String, file: File):String = {
+  def findWords(string: String, file: File): String = {
     val strArray = string.trim.split("\\s+")
     var wordsCount = strArray.length
     var wordsInText = 0
     try {
-      val source = Source.fromFile(file,"ISO-8859-1")
+      val source = Source.fromFile(file, "ISO-8859-1")
       val lines = source.getLines()
-      val lower = lines.map(_.toLowerCase).map(_.replace(",",""))
-      val linesList = lower.flatMap(x=>x.split("\\s+").map(x=>x.trim))
+      val lower = lines.map(_.toLowerCase).map(_.replace(",", ""))
+      val linesList = lower.flatMap(x => x.split("\\s+").map(x => x.trim))
       for (str <- strArray) {
         if (countText(str, linesList)) {
           wordsInText += 1
@@ -50,7 +50,7 @@ object Program {
     catch {
       case ex: Exception => println(s"File reading error. Description: $ex")
     }
-    s"${(100*wordsInText)/wordsCount} ${file.getName}"
+    s"${(100 * wordsInText) / wordsCount} ${file.getName}"
   }
 
   def countText(string: String, linesList: Iterator[String]): Boolean = {
@@ -61,7 +61,7 @@ object Program {
     val lst = file.listFiles().filter(f => f.getAbsolutePath.endsWith("txt")).toList
     println(s"${lst.size} files read in directory $file")
     Index(lst)
-    }
+  }
 
   def iterate(indexedFiles: Index): Unit = {
     print(s"search> ")
